@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>магазин в Чебоксарах | Продажа электроники, одежды, техники | Чебоксары Маркет</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <head>
+         <!-- ОПИСАНИЕ ДЛЯ ПОИСКОВИКОВ -->
+    <meta name="description" content="⭐ Лучший магазин в Чебоксарах! Продажа электроники, одежды, техники по низким ценам. Telegram канал с товарами от проверенных продавцов. Доставка по городу.">
+    
+    <!-- КЛЮЧЕВЫЕ СЛОВА -->
+    <meta name="keywords" content="магазин в Чебоксарах, Чебоксары магазин, купить в Чебоксарах, электроника Чебоксары, одежда Чебоксары, продажа Чебоксары, Telegram магазин Чебоксары">
+     </head>
+     <div style="display:none;">
+        Магазин в Чебоксарах, Чебоксары магазин, купить в Чебоксарах, электроника Чебоксары, одежда Чебоксары
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a6dcc 0%, #2d8de8 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #1a6dcc 0%, #2d8de8 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            border: 5px solid #e6f2ff;
+        }
+
+        .logo i {
+            font-size: 50px;
+            color: white;
+        }
+
+        .header-text {
+            text-align: left;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #1a6dcc;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .highlight {
+            color: #1a6dcc;
+            font-weight: bold;
+        }
+
+        .city-badge {
+            display: inline-block;
+            background-color: #ff6b35;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 10px 0 30px;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
+        }
+
+        .telegram-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0088cc 0%, #1a6dcc 100%);
+            color: white;
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: 600;
+            padding: 18px 40px;
+            border-radius: 50px;
+            margin: 20px 0 40px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(26, 109, 204, 0.4);
+            border: none;
+            cursor: pointer;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(26, 109, 204, 0.5);
+            background: linear-gradient(135deg, #006e9e 0%, #1557a3 100%);
+        }
+
+        .telegram-btn i {
+            margin-right: 12px;
+            font-size: 1.8rem;
+        }
+
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .category {
+            flex: 1;
+            min-width: 200px;
+            background-color: #f5f9ff;
+            padding: 25px 20px;
+            border-radius: 15px;
+            border: 2px solid #e6f2ff;
+            transition: all 0.3s ease;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            border-color: #1a6dcc;
+        }
+
+        .category i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #1a6dcc;
+        }
+
+        .category h3 {
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+            color: #1a6dcc;
+        }
+
+        .price-tag {
+            display: inline-block;
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .advantages {
+            background-color: #f0f8ff;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: left;
+        }
+
+        .advantages h2 {
+            color: #1a6dcc;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+
+        .advantage-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .advantage {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .advantage i {
+            color: #4caf50;
+            margin-right: 10px;
+            margin-top: 5px;
+            font-size: 1.2rem;
+        }
+
+        .testimonials {
+            margin: 30px 0;
+        }
+
+        .testimonials h2 {
+            color: #1a6dcc;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        .testimonial {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 15px 0;
+            text-align: left;
+            border-left: 4px solid #1a6dcc;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            margin-top: 10px;
+            color: #1a6dcc;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+            padding-top: 30px;
+            border-top: 2px dashed #e6f2ff;
+        }
+
+        .stat {
+            text-align: center;
+            margin: 10px;
+            min-width: 150px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1a6dcc;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .contact-info {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        .contact-info i {
+            color: #1a6dcc;
+            margin-right: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .header-text {
+                text-align: center;
+                margin-top: 20px;
+            }
+            
+            .logo {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            
+            .telegram-btn {
+                font-size: 1.2rem;
+                padding: 15px 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .logo {
+                width: 80px;
+                height: 80px;
+            }
+            
+            .logo i {
+                font-size: 40px;
+            }
+            
+            .category {
+                min-width: 100%;
+            }
+        }
+        .logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 5px solid #e6f2ff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.logo-image {
+    width: 110%;
+    height: 110%;
+    object-fit: cover; /* ВОТ ЭТО ИЗМЕНИТЬ */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="tg.jpg" alt="Чебоксары Маркет" class="logo-image">
+            </div>
+            <div class="header-text">
+                <h1>Street | Чебоксары</h1>
+                <p class="subtitle">Telegram канал продаж <span class="highlight">от электроники до одежды</span><br>Только в Чебоксарах, только доступные цены!</p>
+            </div>
+        </div>
+        
+        <div class="city-badge">
+            <i class="fas fa-map-marker-alt"></i> Чебоксары
+        </div>
+        
+        <a href="https://t.me/Cheboksarystreet" id="telegram-link" class="telegram-btn" target="_blank">
+            <i class="fab fa-telegram"></i> Перейти в наш канал
+        </a>
+        
+        <div class="advantages">
+            <h2>Почему выбирают нас?</h2>
+            <div class="advantage-list">
+                <div class="advantage">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <strong>Быстрая доставка </strong> - привезем ваш товар в любую точку города в день заказа 
+                    </div>
+                </div>
+                <div class="advantage">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <strong>Низкие цены</strong> - без наценок перекупщиков, напрямую от продавцов
+                    </div>
+                </div>
+                <div class="advantage">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <strong>Проверенные продавцы</strong> - репутация и отзывы от реальных покупателей
+                    </div>
+                </div>
+                <div class="advantage">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <strong>Широкий ассортимент</strong> - от гаджетов до одежды, всё в одном месте
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>Что можно купить в нашем канале?</h2>
+        <div class="categories">
+            <div class="category">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Электроника</h3>
+                <p>наушники, часы, и др </p>
+                <div class="price-tag">От 1 000 ₽</div>
+            </div>
+            <div class="category">
+                <i class="fas fa-tshirt"></i>
+                <h3>Одежда и обувь</h3>
+                <p>Мужская, женская одежда и обувь</p>
+                <div class="price-tag">От 3000 ₽</div>
+            </div>
+            <div class="category">
+                <i class="fas fa-home"></i>
+                <h3>Для уютности</h3>
+                <p>часы с подсветкой, разные фигурки и многое другое </p>
+                <div class="price-tag">От 750 ₽</div>
+            </div>
+        </div>
+        
+        <div class="testimonials">
+            <h2>Отзывы покупателей</h2>
+            <div class="testimonial">
+                <p>"Купил Часы casio в отличном состоянии за 1500. Встретились с продавцом в центре Чебоксар, всё проверили на месте. Очень доволен!"</p>
+                <div class="testimonial-author">— Алексей, 17 лет</div>
+            </div>
+            <div class="testimonial">
+                <p>"Нашла наушники которые давно хотела, купила за 1500 рублей. Цена в магазине была 3000. Экономия отличная, а качество супер!"</p>
+                <div class="testimonial-author">— Марина, 18 лет</div>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number" id="subscribers-count">500+</div>
+                <div class="stat-label">подписчиков</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">успешных сделок</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">4.8</div>
+                <div class="stat-label">средняя оценка</div>
+            </div>
+        </div>
+        
+        <div class="contact-info">
+            <p><i class="fas fa-info-circle"></i> <strong>Как это работает?</strong> Заходите в наш Telegram канал, смотрите актуальные предложения, связываетесь с продавцом и договариваетесь о встрече в Чебоксарах! Также у нас действует доставка до двери (только в Чебоксарах)</p>
+            <p style="margin-top: 10px;"><i class="fas fa-shield-alt"></i> <strong>Безопасность:</strong> Рекомендуем встречаться в людных местах и проверять товар перед оплатой.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Чебоксары Маркет | Telegram канал продаж в Чебоксарах</p>
+        <p style="margin-top: 5px; font-size: 0.8rem;">Все товары проверяются перед публикацией. Администрация канала следит за качеством предложений.</p>
+    </footer>
+
+    <script>
+        // Функция для обновления счетчика подписчиков
+         
+            
+            // Имитация увеличения счетчика
+            setInterval(() => {
+                count += Math.floor(Math.random() * 3) + 1;
+                countElement.textContent = count.toLocaleString('ru-RU') + '+';
+            }, 8000);
+        }
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ссылка на ваш Telegram канал
+            const telegramLink = document.getElementById('telegram-link');
+            telegramLink.href = "https://t.me/Cheboksarystreet";
+            
+            // Запускаем анимацию счетчика
+            updateSubscriberCount();
+            
+            // Добавляем анимацию при наведении на кнопку
+            const btn = document.querySelector('.telegram-btn');
+            btn.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            
+            btn.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+            
+            // Добавляем анимацию для категорий
+            const categories = document.querySelectorAll('.category');
+            categories.forEach(category => {
+                category.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                
+                category.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
